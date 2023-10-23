@@ -1,0 +1,15 @@
+app:
+  name: infoshare-prod-wind-turbine-app
+  namespace: infoshare-prod
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/infoshare-prod-wind-turbine
+  org: WindTurbineInc
+  name: infoshare-prod-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: infoshare-prod/wind-turbine-app
+  tag: latest
